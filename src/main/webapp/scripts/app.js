@@ -8,7 +8,12 @@ app.config(function ($routeProvider) {
 		})
 		.when('/update', {
 			templateUrl: 'views/update.html',
-			controller: 'displayController'
+			controller: 'updateController'
 		})
+		.when('/create', {
+			templateUrl: 'views/createNew.html',
+			controller: 'createController'
+		})
+
 		.otherwise({ redirectTo: '/'});
 });

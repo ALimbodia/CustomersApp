@@ -6,8 +6,12 @@
 			Name: <input type="text" ng-model="currentCustomer.name" class="form-control"> <br>
 			Email: <input type="email" ng-model="currentCustomer.email" class="form-control"> <br> 
 			Phone: <input type="text" ng-model="currentCustomer.phone" class="form-control"> <br>
-			Address: <input type="text" ng-model="currentCustomer.address" class="form-control"> <br>
-			<button type="button" class="btn btn-primary">Submit</button>
+			Street: <input type="text" ng-model="currentCustomer.address.street" class="form-control"><br>
+			City: <input type="text" ng-model="currentCustomer.address.city" class="form-control"><br>
+			State: <input type="text" ng-model="currentCustomer.address.state" class="form-control"><br>
+			Zip: <input type="text" ng-model="currentCustomer.address.zip" class="form-control"><br>
+			<button type="button" ng-click='doUpdate(currentCustomer)' class="btn btn-primary">Submit</button>
+
 		</form>
 	</div>
 </div>

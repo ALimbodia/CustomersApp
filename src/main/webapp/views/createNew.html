@@ -1,0 +1,17 @@
+<div>
+<br>
+	<h3><b>Create Customer</b></h3><br>
+	<div class="form-group">
+		<form>
+			Name: <input type="text" ng-model="customer.name" class="form-control"> <br>
+			Email: <input type="email" ng-model="customer.email" class="form-control"> <br> 
+			Phone: <input type="text" ng-model="customer.phone" class="form-control"> <br>
+			Street: <input type="text" ng-model="customer.address.street" class="form-control"><br>
+			City: <input type="text" ng-model="customer.address.city" class="form-control"><br>
+			State: <input type="text" ng-model="customer.address.state" class="form-control"><br>
+			Zip: <input type="text" ng-model="customer.address.zip" class="form-control"><br>
+			<button type="button" ng-click='doCreate(customer)' class="btn btn-primary">Create</button>
+
+		</form>
+	</div>
+</div>
